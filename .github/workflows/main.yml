@@ -12,8 +12,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    run: pwd
+      - uses: actions/checkout@v3
+        run: pwd
 
-    - name: 'Login to docker hub'
-    run: docker login --username ahmdes --password dckr_pat_UzhJf7T9ws_R77TPvRYEbkvOMFk
+      - name: "Login to docker hub"
+        run: docker login --username ahmdes --password dckr_pat_UzhJf7T9ws_R77TPvRYEbkvOMFk
+      
+      - name:"Building docker image"
+        run: docker build -t ahmdes/myimage .
+
+      - name: "pushing to dockerhub"
+        run: docker push ahmdes/myimage
+        
