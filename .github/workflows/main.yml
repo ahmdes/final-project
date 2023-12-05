@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    -name: 'Testing github action'
+    - name: 'Testing github action'
     run: pwd
 
-    -name: 'Testin printing'
+    - name: 'Testin printing'
     run: echo Ahmed
