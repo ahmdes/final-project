@@ -16,4 +16,4 @@ jobs:
     run: pwd
 
     -name: 'Testin printing'
-    run: echo Ahmad
+    run: echo Ahmed
