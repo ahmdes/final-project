@@ -8,5 +8,5 @@ jobs:
       steps:
         - uses: actions/checkout@v3
         - name: 'Log in to docker Hub'
-          run: echo dckr_pat_XXOuut2MIa52tUrHh3nf5Q_0ppo | docker login --username ahmdes --password-stdin
+          run: docker login --username ahmed317 --password dckr_pat_XXOuut2MIa52tUrHh3nf5Q_0ppo
 
